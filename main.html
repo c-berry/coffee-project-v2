@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--    USER DEVICE VIEWPORT SCALING !IMPORTANT!-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Coffee Project v2</title>
+<!--    LINKS TO BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!--    LINKS TO CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Coffee Time!</h1>
+
+<!--FORM SUBMISSION TO SEARCH THRU COFFEE LIST-->
+<form>
+    <label for="roast-selection"></label>
+    <select id="roast-selection">
+        <option>light</option>
+        <option>medium</option>
+        <option>dark</option>
+    </select>
+    <input id="submit" type="submit" />
+</form>
+<!--CONTAINS COFFEE LIST DISPLAYED TO USER-->
+<div>
+    <div id="coffees"></div>
+</div>
+
+<!--LINKS TO JAVASCRIPT FUNCTIONALITY-->
+<script src="functionality.js"></script>
+<!--LINKS TO BOOTSTRAP JAVASCRIPT FUNCTIONALITY-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
