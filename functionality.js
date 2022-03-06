@@ -18,7 +18,7 @@ var coffees = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 
-function renderCoffee(coffee) {
+function displayCoffee(coffee) {
     var html = '<div class="coffee">';
     // html += '<div>' + coffee.id + '</div>';
     html += '<div>' + coffee.name + '</div>';
@@ -31,11 +31,12 @@ function renderCoffee(coffee) {
 function renderCoffees(coffees) {
     var html = '';
     for(var i = 0; i < coffees.length; i++) {
-        html += renderCoffee(coffees[i]);
+        html += displayCoffee(coffees[i]);
     }
     return html;
 }
 
+// UPDATES coffeeDisplayed BY ROAST
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
