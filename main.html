@@ -10,23 +10,32 @@
 <!--    LINKS TO CSS-->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 <h1>Coffee Time!</h1>
 
-<!--FORM SUBMISSION TO SEARCH THRU COFFEE LIST-->
+<!--CONTAINS COFFEE LIST DISPLAYED TO USER-->
+<div>
+    <div id="coffees"></div>
+</div>
+<!--OPTION LIST TO SEARCH THRU COFFEE LIST-->
 <form>
     <label for="roast-selection"></label>
     <select id="roast-selection">
         <option>light</option>
         <option>medium</option>
         <option>dark</option>
+        <option>all</option>
     </select>
+<!--SEARCHBAR FOR COFFEE LIST-->
+    <div class="">
+        <label for="coffee-name" class="form-label">Coffee</label><br>
+        <input class="" type="text" name="coffee-name" id="coffee-name" placeholder="search coffee name" autocomplete="off">
+    </div>
+<!--    SUBMIT FORM-->
     <input id="submit" type="submit" />
 </form>
-<!--CONTAINS COFFEE LIST DISPLAYED TO USER-->
-<div>
-    <div id="coffees"></div>
-</div>
+
 
 <!--LINKS TO JAVASCRIPT FUNCTIONALITY-->
 <script src="functionality.js"></script>
